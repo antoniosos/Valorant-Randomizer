@@ -4,27 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zase melee???</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="weapon">
-        <div class="weapon select">
-            
+    <div class="weapons">
+        <div class="weapon-select">
+            <div class="column1">
+                <label for="classic">classic</label>
+                <input type="checkbox" name="classic" id="classic">
+                <label for="shorty">shorty</label>
+                <input type="checkbox" name="shorty" id="shorty">
+                <label for="frenzy">frenzy</label>
+                <input type="checkbox" name="frenzy" id="frenzy">
+                <label for="ghost">ghost</label>
+                <input type="checkbox" name="ghost" id="ghost">
+                <label for="sheriff">sheriff</label>
+                <input type="checkbox" name="sheriff" id="sheriff">
+            </div>
+            <div class="column2">
+                <div class="submachines">
+                    <label for="stinger">stinger</label>
+                    <input type="checkbox" name="stinger" id="stinger">
+                    <label for="specter">specter</label>
+                    <input type="checkbox" name="specter" id="specter">
+                </div>
+                <div class="shotguns">
+                    <label for="bucky">bucky</label>
+                    <input type="checkbox" name="bucky" id="bucky">
+                    <label for="judge">judge</label>
+                    <input type="checkbox" name="judge" id="judge">
+                </div>
+            </div>
+            <div class="column3">
+                <div class="rifles">
+                    <label for="bulldog">bulldog</label>
+                    <input type="checkbox" name="bulldog" id="bulldog">
+                    <label for="guardian">guardian</label>
+                    <input type="checkbox" name="guardian" id="guardian">
+                    <label for="phantom">phantom</label>
+                    <input type="checkbox" name="phantom" id="phantom">
+                    <label for="vandal">vandal</label>
+                    <input type="checkbox" name="vandal" id="vandal">
+                </div>
+            </div>
+            <div class="column4">
+                <div class="snipers">
+                    <label for="marshal">marshal</label>
+                    <input type="checkbox" name="marshal" id="marshal">
+                    <label for="outlaw">outlaw</label>
+                    <input type="checkbox" name="outlaw" id="outlaw">
+                
+                    <label for="operator">operator</label>
+                    <input type="checkbox" name="operator" id="operator">
+                </div>
+                <div class="machines">
+                    <label for="ares">ares</label>
+                    <input type="checkbox" name="ares" id="ares">
+                    <label for="odin">odin</label>
+                    <input type="checkbox" name="odin" id="odin">
+                </div>
+            </div>
+            <div class="column5">
+                <label for="melee">melee</label>
+                    <input type="checkbox" name="melee" id="melee">
+                
+            </div>
         </div>
         <div class="option">
-            <label for="single-weapon"></label>
-            <input type="checkbox" name="single-weapon" id="single-weapon">
-        </div>
-        <div class="weapon roll">
-
-        </div>
-        <div class="economy weapon roll">
-            
-        </div>
-        <div class="option">
-            <label for=""></label>
-            <input type="checkbox" name="" id="">
+            <div class="all select">
+                <button type="button" id="select-all-weapons">selct all</button>
+                <button type="button" id="deselect-all-weapons">deselect all</button>
+                
+            </div>
             <label for="single-weapon">roll single weapon</label>
             <input type="checkbox" name="single-weapon" id="single-weapon">
+        </div>
+        <div class="weapon-roll">
+            <input type="button" value="roll">
+        </div>
+        <div class="economy-weapon-roll">
+            <input type="button" value="pistol $800">
+            <input type="button" value="eco $">
+            <input type="button" value="half $">
+            <input type="button" value="full $">
+        </div>
+        <div class="option">
+            <label for="single-weapon">roll single weapon</label>
+            <input type="checkbox" name="single-weapon" id="single-weapon">
+        </div>
+        
+        <div class="rolled-weapons">
+            <label id="pistol"></label>
+            <img>
+            <label id="primary"></label>
+            <img>
         </div>
     </div>
     <div class="agent">
@@ -53,8 +126,8 @@
             <input type="checkbox" name="Iso" id="Iso">
             <label for="Jett">Jett</label>
             <input type="checkbox" name="Jett" id="Jett">
-            <label for="Kao">Kao</label>
-            <input type="checkbox" name="Kao" id="Kao">
+            <label for="Kayo">Kayo</label>
+            <input type="checkbox" name="Kayo" id="Kayo">
             <label for="Killjoy">Killjoy</label>
             <input type="checkbox" name="Killjoy" id="Killjoy">
             <label for="Neon">Neon</label>
@@ -84,14 +157,15 @@
             <label for="Yoru">Yoru</label>
             <input type="checkbox" name="Yoru" id="Yoru">
             <div class="all select">
-                <input type="button" value="select all">
-                <input type="button" value="deselect all">
+                <input type="button" value="select all" id="select-all-agents">
+                <input type="button" value="deselect all" id="deselect-all-agents">
             </div>
         </div>
         <div class="agent roll">
 
         </div>
     </div>
-
+    <script src="index.js">
+    </script>
 </body>
 </html>
